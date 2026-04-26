@@ -4,7 +4,10 @@
 ![Device](https://img.shields.io/badge/device-gale/gust-orange)
 ![Android](https://img.shields.io/badge/Android-15-green)
 ![Status](https://img.shields.io/badge/status-UNOFFICIAL-blue)
-
+<p align="center">
+  <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-13c-3.jpg" width="170">
+  <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-poco-c65-2.jpg" width="190">
+</p>
 ---
 
 ## 🕒 Status & Progress
@@ -17,7 +20,7 @@
 
 - [x] Gather all required materials
 - [x] Sync TWRP source
-- [x] Integrate device tree ([gamerbom97](https://github.com/gamerbom97/android_device_xiaomi_gale)Thank you for this😇)
+- [x] Integrate device tree ([gamerbom97](https://github.com/gamerbom97/android_device_xiaomi_gale) Thank you for this 😇 )
 - [ ] Build & test
 - [ ] Public release
 
@@ -69,11 +72,9 @@
 
 ## 👏 Credits
  
- Device tree [gamerbom97](https://github.com/gamerbom97/android_device_xiaomi_gale)
- Creator of TWRP [TeamWin Recovery Project
- (https://github.com/TeamWin)
- Source code [minimal-manifest-twrp]
- (https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp)
+- Device tree by: [gamerbom97](https://github.com/gamerbom97/android_device_xiaomi_gale)
+- Creator of TWRP: [TeamWin Recovery Project](https://github.com/TeamWin)
+- Source code by: [minimal-manifest-twrp](https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp)
 
 ---
 <p align="center">
