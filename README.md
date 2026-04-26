@@ -3,11 +3,12 @@
 
 ![Device](https://img.shields.io/badge/device-gale/gust-orange)
 ![Android](https://img.shields.io/badge/Android-15-green)
-![Status](https://img.shields.io/badge/status-UNOFFICIAL-blue)
+![Project](https://img.shields.io/badge/project-UNOFFICIAL-blue)
 <p align="center">
-  <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-13c-3.jpg" width="170">
-  <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-poco-c65-2.jpg" width="190">
+  <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-13c-3.jpg" width="125">
+  <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-poco-c65-2.jpg" width="140">
 </p>
+
 ---
 
 ## 🕒 Status & Progress
