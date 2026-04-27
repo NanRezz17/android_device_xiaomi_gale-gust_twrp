@@ -15,7 +15,7 @@
 
 **Status**
 
-> April 28 👀
+> 05,01,26 👀
 
 **Checklist**
 
@@ -35,16 +35,6 @@
 - [ ] MTP file transfer
 - [ ] Brightness control
 - [ ] Vibration feedback
-
----
-
-## 🎯 Goals
-
-- Full FBE v2 decryption on Android 15
-- AVB 2.0 compatibility
-- Fully working touchscreen
-- Stable backup & restore
-- MTP support
 
 ---
 
