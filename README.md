@@ -5,8 +5,8 @@
 ![Android](https://img.shields.io/badge/Android-15-green)
 ![Project](https://img.shields.io/badge/project-UNOFFICIAL-blue)
 <p align="center">
-  <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-13c-3.jpg" width="125">
-  <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-poco-c65-2.jpg" width="140">
+  <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-13c-3.jpg" width="148">
+  <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-poco-c65-2.jpg" width="167">
 </p>
 
 ---
@@ -15,7 +15,7 @@
 
 **Status**
 
-> 05,01,26 👀
+> in may
 
 **Checklist**
 
@@ -40,7 +40,8 @@
 
 ## 🔧 Installation
 
-> ⚠️ **Proceed at your own risk.** Flashing custom recovery may cause a bootloop. Make sure you understand each step before continuing.
+> [!CAUTION]
+> **Proceed at your own risk.** Flashing custom recovery may cause a bootloop. Make sure you understand each step before continuing.
 
 1. Download the latest release from [Releases](https://github.com/NanRezz17/android_device_xiaomi_gale-gust_twrp/releases)
 2. Download [Android Platform Tools](https://developer.android.com/tools/releases/platform-tools)
@@ -48,17 +49,17 @@
    ```bash
    adb reboot bootloader
    ```
-4. Flash the recovery:
+4. Flash recovery into the vendorboot:
    ```bash
-   fastboot flash recovery twrp.img
+   fastboot flash vendor_boot twrp.img
    ```
 5. Reboot into recovery:
    ```bash
    fastboot reboot recovery
    ```
 
-> 💡 If you encounter a bootloop, flash your stock recovery image to restore.
-
+> [!TIP]
+> **If you encounter a bootloop, flash your stock recovery image to restore.**
 ---
 
 ## 👏 Credits
