@@ -3,7 +3,8 @@
 <img
 src="https://i.imgur.com/lafkQgy.jpeg" width="315">
 </p>
-> Unofficial TWRP recovery for Redmi 13c/poco c65 devices running Android 15. TESTING ONLY!
+
+> Unofficial TWRP recovery for **Redmi 13c/poco c65** devices running Android 15. TESTING ONLY!
 
 ![Device](https://img.shields.io/badge/device-gale/gust-orange)
 ![Android](https://img.shields.io/badge/Android-15-green)
@@ -19,7 +20,7 @@ src="https://i.imgur.com/lafkQgy.jpeg" width="315">
 
 **Status**
 
-> in may
+> In this Month
 
 **Checklist**
 
@@ -63,7 +64,7 @@ src="https://i.imgur.com/lafkQgy.jpeg" width="315">
    ```
 
 > [!TIP]
-> **If you encounter a bootloop, flash your stock recovery image to restore.**
+> **If you encounter a bootloop, flash your stock vendorboot image to restore.**
 ---
 
 ## 👏 Credits
