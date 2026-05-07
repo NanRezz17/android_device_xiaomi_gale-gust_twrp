@@ -1,4 +1,8 @@
 # TWRP build for gale/gust Android 15 (experiment!)
+<p align="center">
+<img
+src="https://i.imgur.com/lafkQgy.jpeg" width="315">
+</p>
 > Unofficial TWRP recovery for Redmi 13c/poco c65 devices running Android 15. TESTING ONLY!
 
 ![Device](https://img.shields.io/badge/device-gale/gust-orange)
@@ -65,7 +69,7 @@
 ## 👏 Credits
  
 - Device tree by: [gamerbom97](https://github.com/gamerbom97/android_device_xiaomi_gale)
-- Creator of TWRP: [TeamWin Recovery Project](https://github.com/TeamWin)
+- Original source TWRP: [TeamWin Recovery Project](https://github.com/TeamWin)
 - Source code by: [minimal-manifest-twrp](https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp)
 
 ---
