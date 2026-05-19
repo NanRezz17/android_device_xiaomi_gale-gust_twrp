@@ -20,14 +20,14 @@ src="https://i.imgur.com/lafkQgy.jpeg" width="315">
 
 **Status**
 
-> In this Month
+> Maybe this week👀
 
 **Checklist**
 
 - [x] Gather all required materials
 - [x] Sync TWRP source
 - [x] Integrate device tree ([gamerbom97](https://github.com/gamerbom97/android_device_xiaomi_gale) Big Thanks for this 😇 )
-- [ ] Build & test
+- [x] Build & test
 - [ ] Public release
 
 **Feature Progress**
