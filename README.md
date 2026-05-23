@@ -20,7 +20,7 @@ src="https://i.imgur.com/lafkQgy.jpeg" width="315">
 
 **Status**
 
-> Maybe this week👀
+> Currently it is available on realease 🥳, this is a test, of course the bootloop risk is high!
 
 **Checklist**
 
@@ -28,7 +28,7 @@ src="https://i.imgur.com/lafkQgy.jpeg" width="315">
 - [x] Sync TWRP source
 - [x] Integrate device tree ([gamerbom97](https://github.com/gamerbom97/android_device_xiaomi_gale) Big Thanks for this 😇 )
 - [x] Build & test
-- [ ] Public release
+- [x] Public test release
 
 **Feature Progress**
 
@@ -41,6 +41,7 @@ src="https://i.imgur.com/lafkQgy.jpeg" width="315">
 - [ ] Brightness control
 - [ ] Vibration feedback
 
+For this we have not checked because it is still in a testing state, if you can help with the test, please contact me ☺️
 ---
 
 ## 🔧 Installation
