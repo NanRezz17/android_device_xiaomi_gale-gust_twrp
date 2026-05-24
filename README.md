@@ -17,11 +17,13 @@ src="https://i.imgur.com/lafkQgy.jpeg" width="315">
 ---
 
 ## 🕒 Status & Progress
-
 **Status**
-
-> Currently it is available on realease 🥳, this is a test, of course the bootloop risk is high!
-
+<pre style="white-space: pre-wrap; word-wrap: break-word;">
+  Coming soon on the 26th 🥳. This is a
+  test release with potential bootloop
+  risk. Proceed only if you fully
+  understand and accept the risks.
+</pre>
 **Checklist**
 
 - [x] Gather all required materials
@@ -31,7 +33,7 @@ src="https://i.imgur.com/lafkQgy.jpeg" width="315">
 - [x] Public test release
 
 **Feature Progress**
-
+> This build remains untested as it is still in a testing phase. If you'd like to help with testing, please reach out. 😊 
 - [ ] Recovery boots successfully
 - [ ] ADB connectivity
 - [ ] Data partition mounting
@@ -40,12 +42,9 @@ src="https://i.imgur.com/lafkQgy.jpeg" width="315">
 - [ ] MTP file transfer
 - [ ] Brightness control
 - [ ] Vibration feedback
-
-For this we have not checked because it is still in a testing state, if you can help with the test, please contact me ☺️
 ---
 
 ## 🔧 Installation
-
 > [!CAUTION]
 > **Proceed at your own risk.** Flashing custom recovery may cause a bootloop. Make sure you understand each step before continuing.
 
@@ -63,7 +62,6 @@ For this we have not checked because it is still in a testing state, if you can 
    ```bash
    fastboot reboot recovery
    ```
-
 > [!TIP]
 > **If you encounter a bootloop, flash your stock vendorboot image to restore.**
 ---
@@ -73,7 +71,6 @@ For this we have not checked because it is still in a testing state, if you can 
 - Device tree by: [gamerbom97](https://github.com/gamerbom97/android_device_xiaomi_gale)
 - Original source TWRP: [TeamWin Recovery Project](https://github.com/TeamWin)
 - Source code by: [minimal-manifest-twrp](https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp)
-
 ---
 <p align="center">
 Original source licensed under GPL v3, and Team Win LLC © 2026.
