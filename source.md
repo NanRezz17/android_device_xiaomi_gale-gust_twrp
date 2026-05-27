@@ -1,7 +1,4 @@
-# Source References
-
-## 𝘋𝘦𝘷𝘪𝘤𝘦 𝘛𝘳𝘦𝘦
-Source: [gamerbom97](https://github.com/gamerbom97/android_device_xiaomi_gale)
+# Resources for building
 
 ## 𝘛𝘦𝘢𝘮𝘞𝘪𝘯 𝘙𝘦𝘤𝘰𝘷𝘦𝘳𝘺 𝘗𝘳𝘰𝘫𝘦𝘤𝘵
 Source: [TWRP](https://github.com/TeamWin)
