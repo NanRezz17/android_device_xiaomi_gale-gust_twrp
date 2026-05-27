@@ -19,18 +19,15 @@ src="https://i.imgur.com/lafkQgy.jpeg" width="315">
 ## 🕒 Status & Progress
 **Status**
 <pre style="white-space: pre-wrap; word-wrap: break-word;">
-  Coming soon on the 26th 🥳. This is a
-  test release with potential bootloop
-  risk. Proceed only if you fully
-  understand and accept the risks.
+  Cancel until an indefinite time!
 </pre>
 **Checklist**
 
 - [x] Gather all required materials
 - [x] Sync TWRP source
-- [x] Integrate device tree ([gamerbom97](https://github.com/gamerbom97/android_device_xiaomi_gale) Big Thanks for this 😇 )
-- [x] Build & test
-- [x] Public test release
+- [ ] Integrate device tree (for now it's broken🫠 I'm trying to make my own version better.)
+- [ ] Build & test
+- [ ] Public test release
 
 **Feature Progress**
 > This build remains untested as it is still in a testing phase. If you'd like to help with testing, please reach out. 😊 
