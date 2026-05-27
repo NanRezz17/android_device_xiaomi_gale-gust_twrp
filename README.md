@@ -19,18 +19,17 @@ src="https://i.imgur.com/lafkQgy.jpeg" width="315">
 ## 🕒 Status & Progress
 **Status**
 <pre style="white-space: pre-wrap; word-wrap: break-word;">
-  Cancel until an indefinite time!
+  Cancel until an indefinite time, Because there is a problem in the device tree, therefore I have to make it from 0 and it takes approximately 2 weeks, if it is according to the prediction then in 2 weeks I will release the twrp 😊 
 </pre>
 **Checklist**
 
 - [x] Gather all required materials
 - [x] Sync TWRP source
-- [ ] Integrate device tree (for now it's broken🫠 I'm trying to make my own version better.)
+- [ ] Integrate device tree (for now it's broken🫠 I'm trying to make my own version better)
 - [ ] Build & test
 - [ ] Public test release
 
 **Feature Progress**
-> This build remains untested as it is still in a testing phase. If you'd like to help with testing, please reach out. 😊 
 - [ ] Recovery boots successfully
 - [ ] ADB connectivity
 - [ ] Data partition mounting
@@ -65,7 +64,7 @@ src="https://i.imgur.com/lafkQgy.jpeg" width="315">
 
 ## 👏 Credits
  
-- Device tree by: [gamerbom97](https://github.com/gamerbom97/android_device_xiaomi_gale)
+- Device tree by: not yet
 - Original source TWRP: [TeamWin Recovery Project](https://github.com/TeamWin)
 - Source code by: [minimal-manifest-twrp](https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp)
 ---
