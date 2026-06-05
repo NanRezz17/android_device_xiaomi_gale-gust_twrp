@@ -19,14 +19,17 @@ src="https://i.imgur.com/lafkQgy.jpeg" width="315">
 ## 🕒 Status & Progress
 **Status**
 <pre style="white-space: pre-wrap; word-wrap: break-word;">
-  Cancel until an indefinite time, Because there is a problem in the device tree, therefore I have to make it from 0 and it takes approximately 2 weeks, if it is according to the prediction then in 2 weeks I will release the twrp 😊 
+  FINALY 😭, I've completed my own device tree, 
+  so I'll finish creating the TWRP 🥳 
+  Wait a few more weeks, soon.
 </pre>
+
 **Checklist**
 
 - [x] Gather all required materials
 - [x] Sync TWRP source
-- [ ] Integrate device tree (for now it's broken🫠 I'm trying to make my own version better)
-- [ ] Build & test
+- [x] Integrate device tree
+- [x] Build & test
 - [ ] Public test release
 
 **Feature Progress**
