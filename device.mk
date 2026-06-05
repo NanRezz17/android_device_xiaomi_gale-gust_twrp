@@ -16,29 +16,33 @@
 
 DEVICE_PATH := device/xiaomi/gust
 
-# 1. Inherit from Core AOSP
+# Core AOSP
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-# 2. Inherit from Virtual A/B and Compression
+# Virtual A/B and Compression
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression_with_xor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
-# 4. Inherit from Main twrp Configuration Trees
+# Main Config Trees
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# 5. API Level
+# API Level
 PRODUCT_SHIPPING_API_LEVEL := 33
 PRODUCT_TARGET_VNDK_VERSION := 35
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# 6. Fastbootd and Sideload Base Utilities
+# Fastbootd and Sideload Base Utilities
 PRODUCT_PACKAGES += \
     fastbootd \
     android.hardware.fastboot@1.1-impl-mock \
     checkpoint_gc
+    
+# Modern Boot Control Configuration (Android 15)
+PRODUCT_PACKAGES += \
+    android.hardware.boot-service.default_recovery
 
 # Override Properties
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -90,14 +94,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctrl
 
-# Dynamic
+# Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# Health
+# Health Services
 PRODUCT_PACKAGES += \
     android.hardware.health-service.example
 
-# Keymastey and Gatekeeper
+# Keymastey and Gatekeeper Services
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/recovery/root/vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod:recovery/root/vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod \
     $(DEVICE_PATH)/recovery/root/vendor/bin/hw/android.hardware.gatekeeper-service.beanpod:recovery/root/vendor/bin/hw/android.hardware.gatekeeper-service.beanpod \

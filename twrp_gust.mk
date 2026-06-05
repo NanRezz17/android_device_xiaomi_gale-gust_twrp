@@ -16,7 +16,7 @@
 
 DEVICE_PATH := device/xiaomi/gust
 
-# Inherit from local device configurations
+# local device configurations
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 # Product device specifications
