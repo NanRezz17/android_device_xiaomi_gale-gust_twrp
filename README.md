@@ -19,21 +19,19 @@ src="https://i.imgur.com/lafkQgy.jpeg" width="315">
 ## 🕒 Status & Progress
 **Status**
 <pre style="white-space: pre-wrap; word-wrap: break-word;">
-  FINALY 😭, I've completed my own device tree, 
-  so I'll finish creating the TWRP 🥳 
-  Wait a few more weeks, soon.
+  In the past month I have completed the TWRP Device
+  tree for GALE/GUST, Soon I will be able to complete 
+  this TWRP project and release it to the public this 
+  month🙂‍↕️.
 </pre>
 
 **Checklist**
-
-- [x] Gather all required materials
-- [x] Sync TWRP source
-- [x] Integrate device tree
+- [x] Making device tree
 - [x] Build & test
 - [ ] Public test release
 
 **Feature Progress**
-- [ ] Recovery boots successfully
+- [ ] Recovery boot successfully
 - [ ] ADB connectivity
 - [ ] Data partition mounting
 - [ ] FBE decryption (Android 15)
@@ -41,6 +39,10 @@ src="https://i.imgur.com/lafkQgy.jpeg" width="315">
 - [ ] MTP file transfer
 - [ ] Brightness control
 - [ ] Vibration feedback
+<pre style="white-space: pre-wrap; word-wrap: break-word;">
+  We haven't confirmed this yet but we'll be testing it
+  for this month!
+</pre>
 ---
 
 ## 🔧 Installation
@@ -67,7 +69,7 @@ src="https://i.imgur.com/lafkQgy.jpeg" width="315">
 
 ## 👏 Credits
  
-- Device tree by: not yet
+- Device tree by: ME🙌 in branch [a15_device-tree_gale](https://github.com/NanRezz17/android_device_xiaomi_gale-gust_twrp/tree/a15_device-tree_gale) and [a15_device-tree_gust](https://github.com/NanRezz17/android_device_xiaomi_gale-gust_twrp/tree/a15_device-tree_gust)
 - Original source TWRP: [TeamWin Recovery Project](https://github.com/TeamWin)
 - Source code by: [minimal-manifest-twrp](https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp)
 ---
