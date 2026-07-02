@@ -29,7 +29,7 @@ void vendor_load_properties()
         property_override(string("ro.product.") + prop + string("name"), "gust");
         property_override(string("ro.product.") + prop + string("device"), "gust");
         property_override(string("ro.product.") + prop + string("model"), "23108RN04Y");
-        property_override(string("ro.product.") + prop + string("marketname"), "Redmi 13C");
+        property_override(string("ro.product.") + prop + string("marketname"), "Poco C65");
         property_override(string("ro.product.") + prop + string("cert"), "23108RN04Y");
     }
     property_override("ro.bootimage.build.date.utc", "1756453697");

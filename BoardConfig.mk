@@ -1,11 +1,11 @@
 #
-# Copyright (C) 2026 The TWRP Open Source Project
+# Copyright (C) 2026 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#     http://www.apache.org/licenses/LICENSE-2.0
+#      http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,15 +16,15 @@
 
 DEVICE_PATH := device/xiaomi/gust
 
-# Architecture
+# Architecture 1/2ND
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-2a-dotprod
+TARGET_ARCH_VARIANT := armv8-2a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_VARIANT := generic
 TARGET_CPU_VARIANT_RUNTIME := cortex-a75
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-2a
+TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
@@ -37,6 +37,7 @@ TARGET_BOARD_SUFFIX := _64
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := mt6768
 TARGET_NO_BOOTLOADER := true
+TW_INCLUDE_BOOT_IMPLEMENTATION := true
 
 # Techniques
 BUILD_BROKEN_DUP_RULES := true
@@ -44,14 +45,14 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_NINJA_USES_ENV_VARS += RTIC_MPGEN
 BUILD_BROKEN_PLUGIN_VALIDATION := soong-libaosprecovery_defaults soong-libguitwrp_defaults soong-libminuitwrp_defaults soong-vold_defaults
 
-# Power Set
+# Power set
 ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
 # Assertation
 TARGET_OTA_ASSERT_DEVICE := gust
 
-# Specify Crypto FBE
+# Specify crypto FBE
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_CRYPTO_BEANPOD := true
@@ -59,15 +60,17 @@ BOARD_USES_METADATA_PARTITION := true
 TARGET_HW_DISK_ENCRYPTION := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 TW_USE_FSCRYPT_POLICY := 2
+PLATFORM_VERSION := 99.87.36
+PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
+PLATFORM_SECURITY_PATCH := 2099-12-31
+BOOT_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
-# Kernel Information
+# Kernel information
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz
 
-# Modern Boot Control Configuration (Android 15)
-TW_INCLUDE_BOOT_IMPLEMENTATION := true
-
-# Vendor Boot
+# Vendor configuration
 TARGET_KERNEL_ARCH := arm64
 BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_HEADER_ARCH := arm64
@@ -89,26 +92,26 @@ BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 BOARD_MKBOOTIMG_ARGS += --vendor_cmdline "$(BOARD_VENDOR_CMDLINE)"
 BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE) --board " "
 
-# Move to Vendor Partitions
+# Move to Vendorboot partition
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 TW_LOAD_VENDOR_BOOT_MODULES := true
 
-# Hardware and Platform
+# Hardware and platform
 BOARD_USES_MTK_HARDWARE := true
 TARGET_BOARD_PLATFORM := mt6768
 
-# fstab
+# Fstab
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/recovery.fstab
 
-# Dynamic Partitions size
+# Dynamic partitions size
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_SUPER_PARTITION_SIZE := 7516192768
+BOARD_MAIN_SIZE := 7505707008
 
-# Mount and Dynamic Partitions configuration
+# Mount configuration
 BOARD_SUPER_PARTITION_GROUPS := main
 BOARD_MAIN_PARTITION_LIST := system system_ext product vendor vendor_dlkm odm
-BOARD_MAIN_SIZE := 7505707008
 BOARD_PARTITION_LIST := $(call to-upper, $(BOARD_MAIN_PARTITION_LIST))
 $(foreach p, $(BOARD_PARTITION_LIST), $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := erofs))
 $(foreach p, $(BOARD_PARTITION_LIST), $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
@@ -119,23 +122,23 @@ TARGET_USES_MKE2FS := true
 TW_INCLUDE_FUSE_NTFS := true
 TW_INCLUDE_FUSE_EXFAT := true
 
-# Recovery
+# Recovery configuration
 TARGET_NO_RECOVERY := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 
-# Format Resolution and Display
+# Resolution and display
 TARGET_SCREEN_HEIGHT := 1600
 TARGET_SCREEN_WIDTH := 720
-TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
+TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 TARGET_SCREEN_DENSITY := 320
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_DEFAULT_BRIGHTNESS := 200
 TW_MAX_BRIGHTNESS := 2047
 TW_FRAMERATE := 90
 
-# Verified Boot
+# Android verified boot
 BOARD_AVB_ENABLE := true
 
 # Init
@@ -167,10 +170,10 @@ TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
 # Fastbootd
 TW_INCLUDE_FASTBOOTD := true
 
-# Debug
-TARGET_USES_LOGD := true
-TWRP_INCLUDE_LOGCAT := true
-TWRP_EVENT_LOGGING := true
+# Debug (enable when you need it)
+# TARGET_USES_LOGD := true
+# TWRP_INCLUDE_LOGCAT := true
+# TWRP_EVENT_LOGGING := true
 
 # Tools
 TW_INCLUDE_RESETPROP := true
@@ -180,5 +183,5 @@ TW_INCLUDE_LPDUMP := true
 TW_INCLUDE_LPTOOLS := true
 
 # Spesial config
-TW_DEVICE_VERSION := v3.7.1 for Redmi 13C
+TW_DEVICE_VERSION := v3.7.1 | Redmi 13C
 MAINTAINER := NanRezz

@@ -1,11 +1,11 @@
 #
-# Copyright (C) 2026 The TWRP Open Source Project
+# Copyright (C) 2026 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#     http://www.apache.org/licenses/LICENSE-2.0
+#      http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -21,35 +21,35 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-# Virtual A/B and Compression
+# Virtual A/B and compression
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression_with_xor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
-# Main Config Trees
+# Main config trees
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# API Level
+# API level
 PRODUCT_SHIPPING_API_LEVEL := 33
 PRODUCT_TARGET_VNDK_VERSION := 35
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# Fastbootd and Sideload Base Utilities
+# Fastbootd and utilities
 PRODUCT_PACKAGES += \
     fastbootd \
     android.hardware.fastboot@1.1-impl-mock \
     checkpoint_gc
     
-# Modern Boot Control Configuration (Android 15)
+# Boot control (Android 15)
 PRODUCT_PACKAGES += \
     android.hardware.boot-service.default_recovery
 
-# Override Properties
+# Override properties
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.fuse.passthrough.enable=true \
     ro.twrp.vendor_boot=true
 
-# A/B OTA Updater Partitions list
+# A/B OTA and partitions list
 AB_OTA_UPDATER := true
 ENABLE_VIRTUAL_AB := true
 TARGET_ENFORCE_AB_OTA_PARTITION_LIST := true
@@ -80,7 +80,7 @@ AB_OTA_PARTITIONS += \
     vendor_dlkm \
     mi_ext
 
-# MediaTek A/B Update Engine
+# MediaTek A/B update engine
 PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
@@ -94,14 +94,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctrl
 
-# Dynamic Partitions
+# Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# Health Services
+# Health services
 PRODUCT_PACKAGES += \
     android.hardware.health-service.example
 
-# Keymastey and Gatekeeper Services
+# Keymastey and gatekeeper services
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/recovery/root/vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod:recovery/root/vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod \
     $(DEVICE_PATH)/recovery/root/vendor/bin/hw/android.hardware.gatekeeper-service.beanpod:recovery/root/vendor/bin/hw/android.hardware.gatekeeper-service.beanpod \
@@ -112,7 +112,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/recovery/root/first_stage_ramdisk/fstab.mt6768:recovery/root/first_stage_ramdisk/fstab.mt6768
 
-# MediaTek Platform Path Utilities
+# MediaTek platform path utilities
 PRODUCT_PACKAGES += \
     mtk_plpath_utils \
     mtk_plpath_utils.recovery
@@ -133,5 +133,5 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     $(DEVICE_PATH)/security/miui_releasekey
 
-# Build Namespaces Framework
+# Build namespaces framework
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)

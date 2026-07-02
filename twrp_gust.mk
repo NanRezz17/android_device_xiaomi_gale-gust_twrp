@@ -1,28 +1,30 @@
 #
-# Copyright (C) 2026 The TWRP Open Source Project
+# Copyright 2026 TeamWin
+# This file is part of TWRP/TeamWin Recovery Project.
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
+# TWRP is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
 #
-#     http://www.apache.org/licenses/LICENSE-2.0
+# TWRP is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
 #
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# You should have received a copy of the GNU General Public License
+# along with TWRP.  If not, see <http://www.gnu.org/licenses/>.
 #
 
 DEVICE_PATH := device/xiaomi/gust
 
-# local device configurations
+# Inherit call
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
-# Product device specifications
+# Product device specification
 PRODUCT_DEVICE := gust
 PRODUCT_NAME := twrp_gust
-PRODUCT_BRAND := Xiaomi
+PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 23108RN04Y
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_RELEASE_NAME := Redmi 13C
+PRODUCT_RELEASE_NAME := Poco C65
