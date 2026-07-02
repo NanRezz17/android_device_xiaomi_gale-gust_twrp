@@ -183,5 +183,5 @@ TW_INCLUDE_LPDUMP := true
 TW_INCLUDE_LPTOOLS := true
 
 # Spesial config
-TW_DEVICE_VERSION := v3.7.1 | Redmi 13C
+TW_DEVICE_VERSION := v3.7.1 | Poco C65
 MAINTAINER := NanRezz
