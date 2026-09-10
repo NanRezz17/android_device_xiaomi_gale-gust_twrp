@@ -19,10 +19,7 @@ src="https://i.imgur.com/lafkQgy.jpeg" width="315">
 ## 🕒 Status & Progress
 **Status**
 <pre style="white-space: pre-wrap; word-wrap: break-word;">
-  In the past month I have completed the TWRP Device
-  tree for GALE/GUST, Soon I will be able to complete 
-  this TWRP project and release it to the public this 
-  month🙂‍↕️.
+  .
 </pre>
 
 **Checklist**
@@ -40,8 +37,7 @@ src="https://i.imgur.com/lafkQgy.jpeg" width="315">
 - [ ] Brightness control
 - [ ] Vibration feedback
 <pre style="white-space: pre-wrap; word-wrap: break-word;">
-  We haven't confirmed this yet but we'll be testing it
-  for this month!
+  We haven't confirmed this.
 </pre>
 ---
 
